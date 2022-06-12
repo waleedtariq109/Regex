@@ -37,30 +37,31 @@
  *
  */
 
+// * Teaser Start 😂
+
 /**
- * 'i' modifier
- * With 'i' modifier basically Turn on case insensitivity.
- * If we have string 'This is Case sensitive' with regex we can easily search
- * any character it dosen't matter is character is uppercase or lowercase
- * because 'i' modifier Turn on case insensitivity
- *
- * Example:
+ ** 'i' modifier
  */
 
-// Here's the string with capital case 'C'
+const str1 = 'This is Case sensitive';
+const pos = str1.search('C');
+const pos1 = str1.search('c');
+const pos2 = str1.search(/C/i);
+const pos3 = str1.search(/c/i);
 
-// If we search 'C' with 'search()' method it should returns the index of 'C'
+console.log(pos);
+console.log(pos1);
+console.log(pos2);
+console.log(pos3);
+
 /**
- * But If we search small case 'c' with 'search()' method it should returns -1
- * because the 'search()' method is case sensitive
+ * * 'g' modifier
  */
-const str = 'This is Case sensitive';
-const pos = str.search('C'); // Search capital case 'C'
-const pos1 = str.search('c'); // Search lower case 'c'
-const pos2 = str.search(/C/i); // Search capital case 'C' with regex
-const pos3 = str.search(/c/i); // Search lower case 'c' with regex
 
-console.log(pos); // Returns the index of character 'C'
-console.log(pos1); // Returns -1 because 'search()' method is case sensitive
-console.log(pos2); // Returns the index of character 'C'
-console.log(pos3); // Returns the index of character 'C'
+const str2 = 'Hello This is is Regex';
+const result = str2.match(/is/g);
+console.log(result);
+
+// * Teaser End 😂
+
+// Character classes
