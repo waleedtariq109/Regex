@@ -95,3 +95,8 @@
 /**
  * * '\w' class
  */
+
+const str = 'Yes! I do know Regex & 10 times I_say.';
+const pattern = /\w/g;
+
+console.log(str.match(pattern));
