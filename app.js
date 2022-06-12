@@ -43,25 +43,55 @@
  ** 'i' modifier
  */
 
-const str1 = 'This is Case sensitive';
-const pos = str1.search('C');
-const pos1 = str1.search('c');
-const pos2 = str1.search(/C/i);
-const pos3 = str1.search(/c/i);
+// const str1 = 'This is Case sensitive';
+// const pos = str1.search('C');
+// const pos1 = str1.search('c');
+// const pos2 = str1.search(/C/i);
+// const pos3 = str1.search(/c/i);
 
-console.log(pos);
-console.log(pos1);
-console.log(pos2);
-console.log(pos3);
+// console.log(pos);
+// console.log(pos1);
+// console.log(pos2);
+// console.log(pos3);
 
 /**
  * * 'g' modifier
  */
 
-const str2 = 'Hello This is is Regex';
-const result = str2.match(/is/g);
-console.log(result);
+// const str2 = 'Hello This is is Regex';
+// const result = str2.match(/is/g);
+// console.log(result);
 
 // * Teaser End 😂
 
 // Character classes
+
+/**
+ * * '.' class
+ */
+
+// const str = "I w\nnder why it's windy";
+// const result = str.match(/w.n\w+/gs);
+// console.log(result);
+
+/**
+ * * '\d' class
+ */
+
+// const str = 'I learn about HTML5, CCS3, ES6, VUE3';
+// const pattern = /\d/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\D' class
+ */
+
+// const str = 'I learn about HTML5, CCS3, ES6, VUE3';
+// const pattern = /\D/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\w' class
+ */
