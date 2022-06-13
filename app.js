@@ -142,7 +142,28 @@
  *   Find non-white space character
  */
 
-const str = 'Yes! I do know Regex & 10 times I_say.';
-const pattern = /\S/g;
+// const str = 'Yes! I do know Regex & 10 times I_say.';
+// const pattern = /\S/g;
+
+// console.log(str.match(pattern));
+
+// * Modifiers
+
+/**
+ * * '/m' modifier
+ *   Multiline search
+ */
+
+// '^' this will check character or word in begining
+
+// const str = 'Hello line 1\nHello line2\nHello line3';
+// const pattern = /^Hello/gm;
+
+// console.log(str.match(pattern));
+
+// '$' this will check character or word in begining
+
+const str = 'Hello line 1\nHello line2\nHello line3';
+const pattern = /\d$/gm;
 
 console.log(str.match(pattern));
