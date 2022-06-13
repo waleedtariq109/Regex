@@ -163,7 +163,26 @@
 
 // '$' this will check character or word in begining
 
-const str = 'Hello line 1\nHello line2\nHello line3';
-const pattern = /\d$/gm;
+// const str = 'Hello line 1\nHello line2\nHello line3';
+// const pattern = /\d$/gm;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '/u' modifier
+ *   Search for unicode
+ *  p{S} - means search for symbols and currencies
+ *  p{Sc} - means search for symbols only
+ *  p{N} - means search for numbers
+ *  p{L} - means search for letters
+ */
+
+const str = 'This is me 😎. How do I look 😉.';
+const str2 = 'I found $500';
+// const pattern = /\p{S}/gu;
+const patternC = /\p{Sc}/gu;
+// const pattern = /\p{N}/gu;
+const pattern = /\p{L}/gu;
 
 console.log(str.match(pattern));
+console.log(str2.match(patternC));
