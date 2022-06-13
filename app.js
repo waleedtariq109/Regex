@@ -41,6 +41,7 @@
 
 /**
  ** 'i' modifier
+ *  Turn on case-insensitive
  */
 
 // const str1 = 'This is Case sensitive';
@@ -56,6 +57,7 @@
 
 /**
  * * 'g' modifier
+ *   Turn on Global Search
  */
 
 // const str2 = 'Hello This is is Regex';
@@ -68,6 +70,7 @@
 
 /**
  * * '.' class
+ *   Some Random character
  */
 
 // const str = "I w\nnder why it's windy";
@@ -76,6 +79,7 @@
 
 /**
  * * '\d' class
+ *   Search digits only
  */
 
 // const str = 'I learn about HTML5, CCS3, ES6, VUE3';
@@ -85,6 +89,7 @@
 
 /**
  * * '\D' class
+ *   Search non-digits only
  */
 
 // const str = 'I learn about HTML5, CCS3, ES6, VUE3';
@@ -94,9 +99,20 @@
 
 /**
  * * '\w' class
+ *   Returns characters and ignore some special characters like '!, & etc'
+ */
+
+// const str = 'Yes! I do know Regex & 10 times I_say.';
+// const pattern = /\w/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\w+' class
+ *   Returns characters and ignore some special characters like '!, & etc'
  */
 
 const str = 'Yes! I do know Regex & 10 times I_say.';
-const pattern = /\w/g;
+const pattern = /\w+/g;
 
 console.log(str.match(pattern));
