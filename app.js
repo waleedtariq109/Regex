@@ -177,12 +177,26 @@
  *  p{L} - means search for letters
  */
 
-const str = 'This is me 😎. How do I look 😉.';
-const str2 = 'I found $500';
+// const str = 'This is me 😎. How do I look 😉.';
+// const str2 = 'I found $500';
 // const pattern = /\p{S}/gu;
-const patternC = /\p{Sc}/gu;
+// const patternC = /\p{Sc}/gu;
 // const pattern = /\p{N}/gu;
-const pattern = /\p{L}/gu;
+// const pattern = /\p{L}/gu;
 
+// console.log(str.match(pattern));
+// console.log(str2.match(patternC));
+
+// * Sets and ranges
+
+// Sets
+
+// const str = "I wonder why it's windy";
+// const pattern = /w[io]n/g;
+// console.log(str.match(pattern));
+
+// Character Range
+
+const str = "I wonder why it's windy";
+const pattern = /[i-o]/g;
 console.log(str.match(pattern));
-console.log(str2.match(patternC));
