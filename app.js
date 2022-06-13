@@ -99,7 +99,7 @@
 
 /**
  * * '\w' class
- *   Returns characters and ignore some special characters like '!, & etc'
+ *   Returns characters and ignore some special characters like '!, &, ., ' ' etc'
  */
 
 // const str = 'Yes! I do know Regex & 10 times I_say.';
@@ -109,10 +109,40 @@
 
 /**
  * * '\w+' class
- *   Returns characters and ignore some special characters like '!, & etc'
+ *   Returns characters and ignore some special characters like '!, &, ., ' ' etc'
+ */
+
+// const str = 'Yes! I do know Regex & 10 times I_say.';
+// const pattern = /\w+/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\W' class
+ *   Find non-word character
+ */
+
+// const str = 'Yes! I do know Regex & 10 times I_say.';
+// const pattern = /\W/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\s' class
+ *   Find white space character
+ */
+
+// const str = 'Yes! I do know Regex & 10 times I_say.';
+// const pattern = /\s/g;
+
+// console.log(str.match(pattern));
+
+/**
+ * * '\S' class
+ *   Find non-white space character
  */
 
 const str = 'Yes! I do know Regex & 10 times I_say.';
-const pattern = /\w+/g;
+const pattern = /\S/g;
 
 console.log(str.match(pattern));
