@@ -203,9 +203,16 @@
 
 // * Quantifiers
 
-//* '*' quantifier
+//* '*' quantifier means exists 0 or more times
+
+// const str = 'This isss Regex Bro.';
+// const pattern = /s*/g;
+
+// console.log(str.match(pattern));
+
+//* '+' quantifier means exists 1 or more times
 
 const str = 'This isss Regex Bro.';
-const pattern = /s*/g;
+const pattern = /s+/g;
 
 console.log(str.match(pattern));
