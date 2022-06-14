@@ -219,7 +219,17 @@
 
 //* '?' quantifier means exists 0 or one time in a word
 
-const str = 'This isss Regex Bro.';
-const pattern = /is?/g;
+// const str = 'This isss Regex Bro.';
+// const pattern = /is?/g;
+
+// console.log(str.match(pattern));
+
+//* '{n}' quantifier means this will search character n times in given string
+
+const str = 'Hello Helo';
+const str2 = 'Hello hellllo HELLLO helo Hellllo heLLo hellllllo';
+const pattern = /hel{2}\w+/gi;
+const pattern2 = /hel{2,4}o/gi;
 
 console.log(str.match(pattern));
+console.log(str2.match(pattern2));
