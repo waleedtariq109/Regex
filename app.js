@@ -226,10 +226,17 @@
 
 //* '{n}' quantifier means this will search character n times in given string
 
-const str = 'Hello Helo';
-const str2 = 'Hello hellllo HELLLO helo Hellllo heLLo hellllllo';
-const pattern = /hel{2}\w+/gi;
-const pattern2 = /hel{2,4}o/gi;
+// const str = 'Hello Helo';
+// const str2 = 'Hello hellllo HELLLO helo Hellllo heLLo hellllllo';
+// const pattern = /hel{2}\w+/gi;
+// const pattern2 = /hel{2,4}o/gi;
+
+// console.log(str.match(pattern));
+// console.log(str2.match(pattern2));
+
+//* Greedy and Lazy Quantifiers
+
+const str = "Javascript 'ES6' and 'ES7' is not new";
+const pattern = /'.+?'/g;
 
 console.log(str.match(pattern));
-console.log(str2.match(pattern2));
