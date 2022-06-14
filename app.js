@@ -257,11 +257,18 @@
  * This class used as anchor
  */
 
-const str = 'testing a test tests best to testify.';
-const pattern = /.ests?\b/g;
+// const str = 'testing a test tests best to testify.';
+// const pattern = /.ests?\b/g;
 
-const str2 = '1122 12345 678 9988 990 109';
-const pattern2 = /\b\d\d\d\b/g;
+// const str2 = '1122 12345 678 9988 990 109';
+// const pattern2 = /\b\d\d\d\b/g;
+
+// console.log(str.match(pattern));
+// console.log(str2.match(pattern2));
+
+// Lookahead
+
+const str = 'Hello, This is Regex, in js';
+const pattern = /\w+(?=,)/g;
 
 console.log(str.match(pattern));
-console.log(str2.match(pattern2));
