@@ -236,7 +236,18 @@
 
 //* Greedy and Lazy Quantifiers
 
-const str = "Javascript 'ES6' and 'ES7' is not new";
-const pattern = /'.+?'/g;
+// const str = "Javascript 'ES6' and 'ES7' is not new";
+// const pattern = /'.+?'/g;
 
-console.log(str.match(pattern));
+// console.log(str.match(pattern));
+
+// * Assertions
+
+// Anchor - '^','$'
+/**
+ * ^ means string start with
+ * $ means string ends with
+ */
+
+const pattern = /Finally$/i;
+console.log(pattern.test('Test is clear finally'));
