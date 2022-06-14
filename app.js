@@ -266,9 +266,16 @@
 // console.log(str.match(pattern));
 // console.log(str2.match(pattern2));
 
-// Lookahead
+// Lookahead Assertion
 
-const str = 'Hello, This is Regex, in js';
-const pattern = /\w+(?=,)/g;
+// const str = 'Hello, This is Regex, in js';
+// const pattern = /\w+(?=,)/g;
+
+// console.log(str.match(pattern));
+
+// Negative Lookahead Assertion
+
+const str = 'Hello, This is Regex, in js?';
+const pattern = /\b\w+(?!,|\?)\b/g;
 
 console.log(str.match(pattern));
