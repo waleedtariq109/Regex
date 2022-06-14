@@ -282,11 +282,18 @@
 
 // Look behind Assertion
 
-const str = 'Dr.Java and Mr.Script is here';
-const str2 = 'Tell 10 times to pay $30';
+// const str = 'Dr.Java and Mr.Script is here';
+// const str2 = 'Tell 10 times to pay $30';
 
-const pattern = /(?<=Dr.)\w+/g;
-const pattern2 = /(?<=\$)\d+/d;
+// const pattern = /(?<=Dr.)\w+/g;
+// const pattern2 = /(?<=\$)\d+/d;
+
+// console.log(str.match(pattern));
+// console.log(str2.match(pattern2));
+
+// Negative Look behind Assertion
+
+const str = 'Tell 10 times to pay $30';
+const pattern = /\b(?<!\$)\d+\b/g;
 
 console.log(str.match(pattern));
-console.log(str2.match(pattern2));
