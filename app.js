@@ -197,6 +197,15 @@
 
 // Character Range
 
-const str = "I wonder why it's windy";
-const pattern = /[i-o]/g;
+// const str = "I wonder why it's windy";
+// const pattern = /[i-o]/g;
+// console.log(str.match(pattern));
+
+// * Quantifiers
+
+//* '*' quantifier
+
+const str = 'This isss Regex Bro.';
+const pattern = /s*/g;
+
 console.log(str.match(pattern));
