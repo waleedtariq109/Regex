@@ -293,7 +293,21 @@
 
 // Negative Look behind Assertion
 
-const str = 'Tell 10 times to pay $30';
-const pattern = /\b(?<!\$)\d+\b/g;
+// const str = 'Tell 10 times to pay $30';
+// const pattern = /\b(?<!\$)\d+\b/g;
 
-console.log(str.match(pattern));
+// console.log(str.match(pattern));
+
+//* Methods used with Regex
+
+// 'exec()' method
+
+const str = 'This is how it is';
+const pattern = /is/g;
+let result = '';
+
+while (result != null) {
+  console.log('Last Index:', pattern.lastIndex);
+  result = pattern.exec(str);
+  console.log(result);
+}
