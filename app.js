@@ -212,7 +212,14 @@
 
 //* '+' quantifier means exists 1 or more times
 
+// const str = 'This isss Regex Bro.';
+// const pattern = /s+/g;
+
+// console.log(str.match(pattern));
+
+//* '?' quantifier means exists 0 or one time in a word
+
 const str = 'This isss Regex Bro.';
-const pattern = /s+/g;
+const pattern = /is?/g;
 
 console.log(str.match(pattern));
