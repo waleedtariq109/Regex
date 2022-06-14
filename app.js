@@ -249,5 +249,19 @@
  * $ means string ends with
  */
 
-const pattern = /Finally$/i;
-console.log(pattern.test('Test is clear finally'));
+// const pattern = /Finally$/i;
+// console.log(pattern.test('Test is clear finally'));
+
+// \b character class
+/**
+ * This class used as anchor
+ */
+
+const str = 'testing a test tests best to testify.';
+const pattern = /.ests?\b/g;
+
+const str2 = '1122 12345 678 9988 990 109';
+const pattern2 = /\b\d\d\d\b/g;
+
+console.log(str.match(pattern));
+console.log(str2.match(pattern2));
