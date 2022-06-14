@@ -275,7 +275,18 @@
 
 // Negative Lookahead Assertion
 
-const str = 'Hello, This is Regex, in js?';
-const pattern = /\b\w+(?!,|\?)\b/g;
+// const str = 'Hello, This is Regex, in js?';
+// const pattern = /\b\w+(?!,|\?)\b/g;
+
+// console.log(str.match(pattern));
+
+// Look behind Assertion
+
+const str = 'Dr.Java and Mr.Script is here';
+const str2 = 'Tell 10 times to pay $30';
+
+const pattern = /(?<=Dr.)\w+/g;
+const pattern2 = /(?<=\$)\d+/d;
 
 console.log(str.match(pattern));
+console.log(str2.match(pattern2));
