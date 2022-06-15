@@ -314,13 +314,20 @@
 
 //* 'match()' and 'matchAll()' methods
 
+// const str = 'Hello this is Regex';
+// const pattern = /is/g;
+
+// const obj = str.matchAll(pattern);
+
+// for (const item of obj) {
+//   console.log(item);
+// }
+
+// console.log(str.match(pattern));
+
+//* 'search()' methods
+
 const str = 'Hello this is Regex';
 const pattern = /is/g;
 
-const obj = str.matchAll(pattern);
-
-for (const item of obj) {
-  console.log(item);
-}
-
-console.log(str.match(pattern));
+console.log(str.search(pattern));
