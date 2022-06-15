@@ -300,14 +300,27 @@
 
 //* Methods used with Regex
 
-// 'exec()' method
+//* 'exec()' method
 
-const str = 'This is how it is';
+// const str = 'This is how it is';
+// const pattern = /is/g;
+// let result = '';
+
+// while (result != null) {
+//   console.log('Last Index:', pattern.lastIndex);
+//   result = pattern.exec(str);
+//   console.log(result);
+// }
+
+//* 'match()' and 'matchAll()' methods
+
+const str = 'Hello this is Regex';
 const pattern = /is/g;
-let result = '';
 
-while (result != null) {
-  console.log('Last Index:', pattern.lastIndex);
-  result = pattern.exec(str);
-  console.log(result);
+const obj = str.matchAll(pattern);
+
+for (const item of obj) {
+  console.log(item);
 }
+
+console.log(str.match(pattern));
