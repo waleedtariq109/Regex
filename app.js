@@ -342,7 +342,16 @@ console.log(str.replace(pattern, '$2-$1'));
 // More Practical Example
 // If we want Surname first and Firstname second
 
-const str2 = 'Waleed, Tariq';
-const pattern2 = /(\w+), (\w+)/g;
+// const str2 = 'Waleed, Tariq';
+// const pattern2 = /(\w+), (\w+)/g;
 
-console.log(str2.replace(pattern2, '$2 $1'));
+// console.log(str2.replace(pattern2, '$2 $1'));
+
+// * Named Groups
+
+const str2 = 'Waleed, Tariq';
+const pattern2 = /(?<fname>\w+), (?<sname>\w+)/;
+const groupVal = str2.match(pattern2).groups;
+
+console.log(groupVal);
+console.log(groupVal.sname, groupVal.fname);
