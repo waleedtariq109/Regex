@@ -327,7 +327,22 @@
 
 //* 'search()' methods
 
-const str = 'Hello this is Regex';
-const pattern = /is/g;
+// const str = 'Hello this is Regex';
+// const pattern = /is/g;
 
-console.log(str.search(pattern));
+// console.log(str.search(pattern));
+
+// * Group Capturing
+
+const str = '9908-7653 is a test number';
+const pattern = /(\d+)-(\d+)/g;
+
+console.log(str.replace(pattern, '$2-$1'));
+
+// More Practical Example
+// If we want Surname first and Firstname second
+
+const str2 = 'Waleed, Tariq';
+const pattern2 = /(\w+), (\w+)/g;
+
+console.log(str2.replace(pattern2, '$2 $1'));
