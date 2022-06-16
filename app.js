@@ -362,3 +362,10 @@ const str = 'The code is 123-4567 and 456-456';
 const pattern = /(\d+)-\1/g;
 
 console.log(str.match(pattern));
+
+// * Back Reference with named group
+
+const str2 = 'The code is 123-4567 and 456-456';
+const pattern2 = /(?<zipcode>\d+)-\k<zipcode>/g;
+
+console.log(str2.match(pattern2));
