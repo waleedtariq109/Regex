@@ -21,3 +21,11 @@ const str3 = '0303993872773';
 const pattern3 = /^[0-9]+$/;
 
 console.log(pattern3.test(str3));
+
+//? Exercise: 4
+// * String only contain letters
+
+const str4 = 'hellOworld';
+const pattern4 = /^[a-z]+$/i;
+
+console.log(pattern4.test(str4));
