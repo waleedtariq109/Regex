@@ -29,3 +29,11 @@ const str4 = 'hellOworld';
 const pattern4 = /^[a-z]+$/i;
 
 console.log(pattern4.test(str4));
+
+//? Exercise: 5
+// * String only contain uppercase words and spaces
+
+const str5 = 'HELLO THIS IS REGEX';
+const pattern5 = /^[A-Z\s]+$/;
+
+console.log(pattern5.test(str5));
