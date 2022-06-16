@@ -334,10 +334,10 @@
 
 // * Group Capturing
 
-const str = '9908-7653 is a test number';
-const pattern = /(\d+)-(\d+)/g;
+// const str = '9908-7653 is a test number';
+// const pattern = /(\d+)-(\d+)/g;
 
-console.log(str.replace(pattern, '$2-$1'));
+// console.log(str.replace(pattern, '$2-$1'));
 
 // More Practical Example
 // If we want Surname first and Firstname second
@@ -349,9 +349,16 @@ console.log(str.replace(pattern, '$2-$1'));
 
 // * Named Groups
 
-const str2 = 'Waleed, Tariq';
-const pattern2 = /(?<fname>\w+), (?<sname>\w+)/;
-const groupVal = str2.match(pattern2).groups;
+// const str2 = 'Waleed, Tariq';
+// const pattern2 = /(?<fname>\w+), (?<sname>\w+)/;
+// const groupVal = str2.match(pattern2).groups;
 
-console.log(groupVal);
-console.log(groupVal.sname, groupVal.fname);
+// console.log(groupVal);
+// console.log(groupVal.sname, groupVal.fname);
+
+// * Back Reference
+
+const str = 'The code is 123-4567 and 456-456';
+const pattern = /(\d+)-\1/g;
+
+console.log(str.match(pattern));
