@@ -13,3 +13,11 @@ const str2 = '14 street';
 const pattern2 = /^[0-9]/; // Or we use /^\d/
 
 console.log(pattern2.test(str2));
+
+//? Exercise: 3
+// * String only contain digits
+
+const str3 = '0303993872773';
+const pattern3 = /^[0-9]+$/;
+
+console.log(pattern3.test(str3));
